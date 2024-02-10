@@ -1,15 +1,47 @@
-header.header {
-  .navbar {
-    &-nav {
-      .nav-item {
-        .nav-link {
-          transition: color 0.3s ease;
+.navbar {
+  &-nav {
+    display: flex;
+    gap: 50px;
 
-          &:hover {
-            color: $primary;
-            font-family: 'Poppins Bold', sans-serif;
-          }
+    @include media("mobile") {
+      gap: 2px;
+    }
+
+    .nav-item {
+      .nav-link {
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary;
         }
+      }
+    }
+  }
+
+  .navbar-nav-right {
+    margin-left: 60px;
+    gap: 24px;
+
+    .nav-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .nav-lang {
+      border: 2px solid #000;
+      border-radius: 10px;
+      width: 56px;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
       }
     }
   }

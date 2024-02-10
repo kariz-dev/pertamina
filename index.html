@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font icons -->
+  <link rel="stylesheet" href="/public/icons/around-icons.min.css">
+
   <!-- Style -->
   <link rel="stylesheet" href="/public/css/custom-bootstrap.css">
   <link rel="stylesheet" href="/public/css/style.css">
@@ -13,36 +16,40 @@
 <body>
 
   <!-- Header -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="/public/img/logo-light.png" alt="logo pertamina foundation" class="navbar-brand-img">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Capaian</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Karir</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/public/img/logo-dark.svg" alt="logo pertamina foundation" class="navbar-brand-img">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Capaian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Karir</a>
+          </li>
+        </ul>
+        <div class="d-none d-md-flex navbar-nav-right">
+          <a class="nav-link nav-search" href="#">
+            <i class="ai-search"></i>
+          </a>
+          <a class="nav-link nav-lang" href="#">
+            <img src="/public/img/flag.svg" alt="multilingual">
+            ID
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
   <!-- End Header -->
 
   <!-- Banner -->

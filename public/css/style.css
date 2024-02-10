@@ -16,8 +16,32 @@ body {
 .bg-gradient {
   background: linear-gradient(180deg, #85C224 0%, #0067AB 100%); }
 
-header.header .navbar-nav .nav-item .nav-link {
-  transition: color 0.3s ease; }
-  header.header .navbar-nav .nav-item .nav-link:hover {
-    color: #85C224;
-    font-family: 'Poppins Bold', sans-serif; }
+.navbar-nav {
+  display: flex;
+  gap: 50px; }
+  @media (max-width: 767px) {
+    .navbar-nav {
+      gap: 2px; } }
+  .navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease; }
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #85C224; }
+
+.navbar .navbar-nav-right {
+  margin-left: 60px;
+  gap: 24px; }
+  .navbar .navbar-nav-right .nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navbar .navbar-nav-right .nav-search i {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .navbar .navbar-nav-right .nav-lang {
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 56px;
+    text-align: center; }
+    .navbar .navbar-nav-right .nav-lang img {
+      margin: 0 auto; }
