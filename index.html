@@ -1,268 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Font icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Font icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
 
-  <!-- Slick -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick -->
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <!-- Slick Theme CSS (optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./public/css/custom-bootstrap.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./public/css/custom-bootstrap.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="./public/css/style.css" />
 
-  <!-- Style -->
-  <link rel="stylesheet" href="./public/css/style.css">
+    <title>Pertamina Foundation</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./public/img/logo-dark.svg"
+            alt="logo pertamina foundation"
+            class="navbar-brand-img"
+          />
+        </a>
 
-  <title>Pertamina Foundation</title>
-</head>
-<body>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./public/img/logo-dark.svg" alt="logo pertamina foundation" class="navbar-brand-img">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Capaian</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Karir</a>
-          </li>
-        </ul>
-        <div class="d-none d-md-flex navbar-nav-right">
-          <a class="nav-link nav-search" href="#">
-            <i class="bi bi-search"></i>
-          </a>
-          <a class="nav-link nav-lang" href="#">
-            <img src="./public/img/flag.svg" alt="multilingual">
-            ID
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- End Header -->
-
-  <!-- Banner -->
-  <section class="banner">
-    <div id="bannerCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./public/img/banner-slider-1.png" class="d-block w-100" alt="banner-slider-1">
-          <div class="carousel-caption d-none d-md-flex">
-            <h2>BERSAMA DALAM <span>KEMANDIRIAN</span>
-              & <span>KEBERLANJUTAN</span></h2>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Capaian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Karir</a>
+            </li>
+          </ul>
+          <div class="d-none d-md-flex navbar-nav-right">
+            <a class="nav-link nav-search" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+            <a class="nav-link nav-lang" href="#">
+              <img src="./public/img/flag.svg" alt="multilingual" />
+              ID
+            </a>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="./public/img/banner-slider-2.png" class="d-block w-100" alt="banner-slider-2">
-          <div class="carousel-content d-none d-md-flex">
-            <div class="wrap">
-              <h3>Tetap Menghijau di Musim Kemarau Berkat pemanfaatan tenaga surya untuk pompa air sumur dalam, tak ada lagi sawah kering meski kemarau berkepanjangan</h3>
-              <p>Setiap kali memasuki musim kemarau, Priyatno merasa resah. Petani yang tergabung dalam Gabungan Kelompok Tani (Gapoktan) Margo Sugih di Desa Kalijaran Kecamatan Maos, Kabupaten Cilacap, itu khawatir gagal panen karena kurangnya air yang mengaliri sawahnya.</p>
-              <a class="cta-link" href="#">
-                <i class="bi bi-arrow-right"></i>
-              </a>
+      </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Banner -->
+    <section class="banner">
+      <div
+        id="bannerCarouselIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#bannerCarouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#bannerCarouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#bannerCarouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./public/img/banner-slider-1.png"
+              class="d-block w-100"
+              alt="banner-slider-1"
+            />
+            <div class="carousel-caption d-none d-md-flex">
+              <h2>
+                BERSAMA DALAM <span>KEMANDIRIAN</span> &
+                <span>KEBERLANJUTAN</span>
+              </h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/img/banner-slider-2.png"
+              class="d-block w-100"
+              alt="banner-slider-2"
+            />
+            <div class="carousel-content d-none d-md-flex">
+              <div class="wrap">
+                <h3>
+                  Tetap Menghijau di Musim Kemarau Berkat pemanfaatan tenaga
+                  surya untuk pompa air sumur dalam, tak ada lagi sawah kering
+                  meski kemarau berkepanjangan
+                </h3>
+                <p>
+                  Setiap kali memasuki musim kemarau, Priyatno merasa resah.
+                  Petani yang tergabung dalam Gabungan Kelompok Tani (Gapoktan)
+                  Margo Sugih di Desa Kalijaran Kecamatan Maos, Kabupaten
+                  Cilacap, itu khawatir gagal panen karena kurangnya air yang
+                  mengaliri sawahnya.
+                </p>
+                <a class="cta-link" href="#">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/img/banner-slider-3.png"
+              class="d-block w-100"
+              alt="banner-slider-3"
+            />
+            <div class="carousel-content d-none d-md-flex">
+              <div class="wrap">
+                <h3>
+                  Beo Lejong Penyu : Jejak Tukik, Kisah Penuh Cinta dari Nusa
+                  Tenggara Timur
+                </h3>
+                <p>
+                  Di sini, mereka diterima. DIbesarkan dengan penuh cinta,
+                  sampai tiba akhirnya untuk melepaskan ke laut luas, tempat
+                  Dimana mereka seharusnya berada. Persinggahan penyu itu
+                  dinamakan kampung Beo Lejong Penyu di Desa Nanga Bere, Nusa
+                  Tenggara Timur.
+                </p>
+                <a class="cta-link" href="#">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="./public/img/banner-slider-3.png" class="d-block w-100" alt="banner-slider-3">
-          <div class="carousel-content d-none d-md-flex">
-            <div class="wrap">
-              <h3>Beo Lejong Penyu : Jejak Tukik, Kisah Penuh Cinta dari Nusa Tenggara Timur</h3>
-              <p>Di sini, mereka diterima. DIbesarkan dengan penuh cinta, sampai tiba akhirnya untuk melepaskan ke laut luas, tempat Dimana mereka seharusnya berada. Persinggahan penyu itu dinamakan kampung Beo Lejong Penyu di Desa Nanga Bere, Nusa Tenggara Timur.</p>
-              <a class="cta-link" href="#">
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#bannerCarouselIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#bannerCarouselIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#bannerCarouselIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-  <!-- End Banner -->
+    </section>
+    <!-- End Banner -->
 
-  <!-- About -->
-  <section class="about">
-    <div class="container">
-      <h2 class="heading text-center">Berkarya,  Berbagi, Bergerak bersama</h2>
-      <div class="sparator text-center">
-        <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
-          <defs>
-          <linearGradient id="paint0_linear_15_92" x1="84" y1="4.76837e-06" x2="84" y2="82" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#85C224"/>
-          <stop offset="1" stop-color="#0067AB"/>
-          </linearGradient>
-          </defs>
-          </svg>
-      </div>
-
-
-    </div>
-  </section>
-  <!-- End About -->
-
-  <!-- Event -->
-  <section class="event">
-    <div class="container">
-      <h2 class="heading text-center">Event</h2>
-      <div class="sparator text-center">
-        <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
-          <defs>
-          <linearGradient id="paint0_linear_15_92" x1="84" y1="4.76837e-06" x2="84" y2="82" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#85C224"/>
-          <stop offset="1" stop-color="#0067AB"/>
-          </linearGradient>
-          </defs>
-          </svg>
-      </div>
-      <div class="wrapper">
-        
-      </div>
-    </div>
-  </section>
-  <!-- End Event -->
-
-  <!-- Visi -->
-  <section class="visi">
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <img src="./public/img/visi.png" alt="visi" class="visi-img">
-        </div>
-        <div class="col-md">
-          <h2 class="heading">Bersinergi dan Berkelanjutan</h2>
-          <div class="sparator">
-            <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
+    <!-- About -->
+    <section class="about">
+      <div class="container">
+        <div class="container-wrapper">
+          <h2 class="heading text-center">
+            Berkarya, Berbagi, Bergerak bersama
+          </h2>
+          <div class="sparator text-center">
+            <svg
+              width="82"
+              height="4"
+              viewBox="0 0 82 4"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="82"
+                y="4.76837e-06"
+                width="4"
+                height="82"
+                transform="rotate(90 82 4.76837e-06)"
+                fill="url(#paint0_linear_15_92)"
+              />
               <defs>
-              <linearGradient id="paint0_linear_15_92" x1="84" y1="4.76837e-06" x2="84" y2="82" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#85C224"/>
-              <stop offset="1" stop-color="#0067AB"/>
-              </linearGradient>
+                <linearGradient
+                  id="paint0_linear_15_92"
+                  x1="84"
+                  y1="4.76837e-06"
+                  x2="84"
+                  y2="82"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#85C224" />
+                  <stop offset="1" stop-color="#0067AB" />
+                </linearGradient>
               </defs>
-              </svg>
+            </svg>
           </div>
           <p class="desc">
-            Program bersinergi dan berkelanjutan yang dijalankan oleh Pertamina Foundation mencerminkan komitmen  dalam mendukung pembangunan berkelanjutan di berbagai lapisan kegiatan. Dengan fokus pada sinergi, program ini dirancang untuk memanfaatkan potensi kolaborasi antara Pertamina Foundation, pemerintah, bisnis, dan masyarakat agar dapat memberikan dampak positif yang lebih luas dan berkelanjutan. 
+            Berdiri teguh sebagai pilar kepedulian sosial dan pembangunan
+            berkelanjutan. Dengan komitmen untuk memberikan dampak positif bagi
+            masyarakat dan lingkungan, Pertamina Foundation menjadi penyokong
+            utama inovasi, pendidikan, dan kesejahteraan, membuka jalan menuju
+            masa depan yang berkelanjutan dan lebih baik bagi seluruh komunitas.
           </p>
-          <a href="#" class="link">Baca Selengkapnya</a>
-         
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Visi -->
+    </section>
+    <!-- End About -->
 
-  <!-- Program -->
-  <section class="program">
-    <div class="container">
-      <h2 class="heading text-center">Program Kami</h2>
-      <div class="sparator text-center">
-        <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
-          <defs>
-          <linearGradient id="paint0_linear_15_92" x1="84" y1="4.76837e-06" x2="84" y2="82" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#85C224"/>
-          <stop offset="1" stop-color="#0067AB"/>
-          </linearGradient>
-          </defs>
+    <!-- Event -->
+    <section class="event">
+      <div class="container">
+        <h2 class="heading text-center">Event</h2>
+        <div class="sparator text-center">
+          <svg
+            width="82"
+            height="4"
+            viewBox="0 0 82 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="82"
+              y="4.76837e-06"
+              width="4"
+              height="82"
+              transform="rotate(90 82 4.76837e-06)"
+              fill="url(#paint0_linear_15_92)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_15_92"
+                x1="84"
+                y1="4.76837e-06"
+                x2="84"
+                y2="82"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#85C224" />
+                <stop offset="1" stop-color="#0067AB" />
+              </linearGradient>
+            </defs>
           </svg>
-      </div>
-    </div>
-  </section>
-
-  <section class="footer">
-    <div class="container pt-60">
-      <img src="./public/img/logo_putih.png"/>
-      <hr class="hr" />
-      <div class="row">
-        <div class="col-sm-4">
-          <span class="fw-bold">Pertamina Foundation</span>
-          <p>
-            Alamat: <br/>
-            Jl. Teuku Nyak Arief, Kawasan Pertamina Simprug Kebayoran Lama, Jakarta 12220<br/>
-            Telp: +62 21 7223029 ext. 3808<br/>
-            Email: info@pertaminafoundation.org
-          </p>
-          <p class="fw-bold">Media Sosial</p>
-          <ul class="social-media">
-            <li><img src="public/img/ic_outline-email.png"/></li>
-            <li><img src="public/img/mdi_instagram.png"/></li>
-            <li><img src="public/img/mingcute_youtube-line.png"/></li>
-            <li><img src="public/img/ri_twitter-line.png"/></li>
-            <li><img src="public/img/mingcute_facebook-line.png"/></li>
-            <li><img src="public/img/ant-design_linkedin-outlined.png"/></li>
-          </ul>
         </div>
-        <div class="col-sm-2">
-          <span class="fw-bold">File</span>
-          <ul class="nostyle">
-            <li>Annual Report</li>
-            <li>Impact Report</li>
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <span class="fw-bold">Berhubungan</span>
-          <ul class="nostyle">
-            <li>Kontak Kami</li>
-            <li>Karir</li>
-          </ul>
-        </div>
-        <div class="col-sm-3">
-          <span class="fw-bold">Link</span>
-          <ul class="nostyle">
-            <li>PT Pertamina (Persero)</li>
-            <li>Kementrian BUMN</li>
-            <li>Universitas Pertamina</li>
-          </ul>
+        <div class="wrapper">
+          <div class="container-wrapper">
+            <div class="slick-carousel">
+              <div class="slick-carousel-item">
+                <img src="./public/img/event1.png" alt="Image 1" />
+                <div class="overlay"></div>
+              </div>
+              <div class="slick-carousel-item">
+                <img src="./public/img/event2.png" alt="Image 2" />
+                <div class="overlay"></div>
+              </div>
+              <div class="slick-carousel-item">
+                <img src="./public/img/event1.png" alt="Image 1" />
+                <div class="overlay"></div>
+              </div>
+              <div class="slick-carousel-item">
+                <img src="./public/img/event2.png" alt="Image 2" />
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container pb-60">
-      <div class="col-sm-12">
-        <span>
-          Copyright 2023 Pertamina Foundation. Riyo Syahrizal <br/>
-          All Rights Reserved
-        </span>
+    </section>
+    <!-- End Event -->
+
+    <!-- Visi -->
+    <section class="visi">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <img src="./public/img/visi.png" alt="visi" class="visi-img" />
+          </div>
+          <div class="col-md">
+            <h2 class="heading">Bersinergi dan Berkelanjutan</h2>
+            <div class="sparator">
+              <svg
+                width="82"
+                height="4"
+                viewBox="0 0 82 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="82"
+                  y="4.76837e-06"
+                  width="4"
+                  height="82"
+                  transform="rotate(90 82 4.76837e-06)"
+                  fill="url(#paint0_linear_15_92)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_15_92"
+                    x1="84"
+                    y1="4.76837e-06"
+                    x2="84"
+                    y2="82"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#85C224" />
+                    <stop offset="1" stop-color="#0067AB" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <p class="desc">
+              Program bersinergi dan berkelanjutan yang dijalankan oleh
+              Pertamina Foundation mencerminkan komitmen dalam mendukung
+              pembangunan berkelanjutan di berbagai lapisan kegiatan. Dengan
+              fokus pada sinergi, program ini dirancang untuk memanfaatkan
+              potensi kolaborasi antara Pertamina Foundation, pemerintah,
+              bisnis, dan masyarakat agar dapat memberikan dampak positif yang
+              lebih luas dan berkelanjutan.
+            </p>
+            <a href="#" class="link">Baca Selengkapnya</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- End Visi -->
 
-  <!-- Vendor -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./public/js/bootstrap.bundle.js"></script>
+    <!-- Program -->
+    <section class="program">
+      <div
+        class="container"
+        style="background: url(./public/img/bg-program.png)"
+      >
+        <h2 class="heading text-center">Program Kami</h2>
+        <div class="sparator text-center">
+          <svg
+            width="82"
+            height="4"
+            viewBox="0 0 82 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="82"
+              y="4.76837e-06"
+              width="4"
+              height="82"
+              transform="rotate(90 82 4.76837e-06)"
+              fill="url(#paint0_linear_15_92)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_15_92"
+                x1="84"
+                y1="4.76837e-06"
+                x2="84"
+                y2="82"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#85C224" />
+                <stop offset="1" stop-color="#0067AB" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="program-wrapper">
+          <div class="card">
+            <img src="./public/img/card-program2.png" alt="program">
+            <a class="link" href="#">Education <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="card">
+            <img src="./public/img/card-program3.png" alt="program">
+            <a class="link" href="#">Education <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="card">
+            <img src="./public/img/card-program1.png" alt="program">
+            <a class="link" href="#">Education <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
 
 
-</body>
+
+      </div>
+      <div class="container" style="background: url(./public/img/pertamina.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="content">
+          <h2 class="heading">Pertamina Sustainability Center</h2>
+          <p class="desc">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <a href="#" class="link">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Program -->
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="heading text-center">Hubungi Kami</h2>
+        <div class="sparator text-center">
+          <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
+            <defs>
+              <linearGradient id="paint0_linear_15_92" x1="84" y1="4.76837e-06" x2="84" y2="82" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#85C224"/>
+                <stop offset="1" stop-color="#0067AB"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="text-center mt-4 mb-4">Beritahu kami untuk membantu</div>
+        <div class="row">
+          <div class="col-sm-7">
+            <form>
+              <input class="form-control" placeholder="Nama" />
+              <input class="form-control" placeholder="Alamat Email" />
+              <input class="form-control" placeholder="Judul" />
+              <textarea class="form-control" placeholder="Tulisan" rows="5"></textarea>
+              <button type="button" class="btn btn-primary submit-button">Kirim</button>
+            </form>
+          </div>
+          <div class="col-sm-5">
+            <p class="mt-20">Lokasi</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2613742889544!2d106.78543686276804!3d-6.2292315995650975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f139fc776bfb%3A0x13f11f9af3a59a9a!2sPERTAMINA%20FOUNDATION!5e0!3m2!1sen!2sid!4v1707580860405!5m2!1sen!2sid" height="250" style="border:0;width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="nostyle">
+              <li><img src="public/img/ri_customer-service-fill.png" class="mr-10"> +62 217223029 ext. 3808</li>
+              <li><img src="public/img/entypo_email.png" class="mr-10"> info@pertaminafoundation.org</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container pt-60">
+        <img src="./public/img/logo_putih.png" />
+        <hr class="hr" />
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="fw-bold">Pertamina Foundation</span>
+            <p>
+              Alamat: <br />
+              Jl. Teuku Nyak Arief, Kawasan Pertamina Simprug Kebayoran Lama,
+              Jakarta 12220<br />
+              Telp: +62 21 7223029 ext. 3808<br />
+              Email: info@pertaminafoundation.org
+            </p>
+            <p class="fw-bold">Media Sosial</p>
+            <ul class="social-media">
+              <li><img src="public/img/ic_outline-email.png" /></li>
+              <li><img src="public/img/mdi_instagram.png" /></li>
+              <li><img src="public/img/mingcute_youtube-line.png" /></li>
+              <li><img src="public/img/ri_twitter-line.png" /></li>
+              <li><img src="public/img/mingcute_facebook-line.png" /></li>
+              <li><img src="public/img/ant-design_linkedin-outlined.png" /></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <span class="fw-bold">File</span>
+            <ul class="nostyle">
+              <li>Annual Report</li>
+              <li>Impact Report</li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <span class="fw-bold">Berhubungan</span>
+            <ul class="nostyle">
+              <li>Kontak Kami</li>
+              <li>Karir</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <span class="fw-bold">Link</span>
+            <ul class="nostyle">
+              <li>PT Pertamina (Persero)</li>
+              <li>Kementrian BUMN</li>
+              <li>Universitas Pertamina</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container pb-60">
+        <div class="col-sm-12">
+          <span>
+            Copyright 2023 Pertamina Foundation. Riyo Syahrizal <br />
+            All Rights Reserved
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+
+    <!-- Vendor -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/main.js"></script>
+  </body>
 </html>

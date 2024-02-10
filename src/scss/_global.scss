@@ -1,17 +1,46 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .bg-gradient {
-  background: linear-gradient(180deg, #85C224 0%, #0067AB 100%);
+  background: linear-gradient(180deg, #85c224 0%, #0067ab 100%);
 }
 
 h2.heading {
   color: #000;
-  font-family: 'Poppins Bold', sans-serif;
+  font-family: "Poppins Bold", sans-serif;
   font-size: 20px;
 }
 
 .sparator {
   margin-top: 30px;
+}
+
+.container-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.pt-60{padding-top: 60px}
+.pb-60{padding-bottom: 60px}
+.mr-10{margin-right: 10px}
+.mt-20{margin-top:20px}
+.mt-150{margin-top:150px}
+// .footer hr{
+// 	border: 1px solid #fff;
+// 	margin: 35px 0;
+// }
+.contact input, .contact textarea{
+	border-radius: 20px;
+  color: #606060;
+  padding: 12px 40px;
+  margin-top: 20px;
+  border: 1px solid #606060;
+}
+.contact .submit-button{
+	border: 3px solid #85C224;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 24px;
+  margin-top: 40px;
 }
