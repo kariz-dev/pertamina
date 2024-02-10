@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Futura Bold';
+  src: url("../fonts/futura-bold-font.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype"); }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.bg-gradient {
+  background: linear-gradient(180deg, #85C224 0%, #0067AB 100%); }
+
+header.header .navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease; }
+  header.header .navbar-nav .nav-item .nav-link:hover {
+    color: #85C224;
+    font-family: 'Poppins Bold', sans-serif; }

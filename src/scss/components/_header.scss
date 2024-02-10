@@ -1,0 +1,16 @@
+header.header {
+  .navbar {
+    &-nav {
+      .nav-item {
+        .nav-link {
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $primary;
+            font-family: 'Poppins Bold', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
