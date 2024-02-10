@@ -16,6 +16,11 @@ body {
 .bg-gradient {
   background: linear-gradient(180deg, #85C224 0%, #0067AB 100%); }
 
+h2.heading {
+  color: #000;
+  font-family: 'Poppins Bold', sans-serif;
+  font-size: 20px; }
+
 @media (max-width: 767px) {
   .navbar {
     background: #fff; } }
