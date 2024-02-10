@@ -1,0 +1,23 @@
+.footer{
+	background: linear-gradient(180deg, rgb(133, 194, 36) 0%, rgb(0, 103, 171) 100%);
+	color: #fff;
+	line-height: 2;
+	font-size: 15px;
+}
+.social-media{
+	list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 0;
+}
+.nostyle{
+	list-style: none;
+ 	padding: 0;
+ 	line-height: 2;
+}
+.pt-60{padding-top: 60px}
+.pb-60{padding-bottom: 60px}
+.footer hr{
+	border: 1px solid #fff;
+	margin: 35px 0;
+}

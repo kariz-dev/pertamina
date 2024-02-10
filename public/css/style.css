@@ -132,3 +132,30 @@ h2.heading {
       margin-top: 30px;
       text-align: justify;
       line-height: 2em; }
+
+.footer {
+  background: linear-gradient(180deg, #85c224 0%, #0067ab 100%);
+  color: #fff;
+  line-height: 2;
+  font-size: 15px; }
+
+.social-media {
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 0; }
+
+.nostyle {
+  list-style: none;
+  padding: 0;
+  line-height: 2; }
+
+.pt-60 {
+  padding-top: 60px; }
+
+.pb-60 {
+  padding-bottom: 60px; }
+
+.footer hr {
+  border: 1px solid #fff;
+  margin: 35px 0; }
