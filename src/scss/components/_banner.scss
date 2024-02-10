@@ -2,7 +2,7 @@
   @include media ('mobile') {
     margin-top: 60px;
   }
-  
+
   .carousel {
     &-inner {
       .carousel-item {
@@ -65,5 +65,9 @@
         }
       }
     }
+  }
+
+  .carousel-indicators {
+    margin-bottom: 45px;
   }
 }

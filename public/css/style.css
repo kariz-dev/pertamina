@@ -21,6 +21,9 @@ h2.heading {
   font-family: 'Poppins Bold', sans-serif;
   font-size: 20px; }
 
+.sparator {
+  margin-top: 30px; }
+
 @media (max-width: 767px) {
   .navbar {
     background: #fff; } }
@@ -106,3 +109,26 @@ h2.heading {
       margin-top: 100px;
       font-size: 20px;
       color: #fff; }
+
+.banner .carousel-indicators {
+  margin-bottom: 45px; }
+
+.about {
+  z-index: 3;
+  position: relative;
+  margin-top: -30px; }
+  .about .container {
+    background-color: #fff;
+    border-radius: 30px;
+    padding-top: 60px; }
+
+.visi .container {
+  border-bottom: 5px solid #85C224; }
+  .visi .container .row .col-md {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .visi .container .row .col-md .desc {
+      margin-top: 30px;
+      text-align: justify;
+      line-height: 2em; }

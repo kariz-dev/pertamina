@@ -1,0 +1,19 @@
+.visi {
+  .container {
+    border-bottom: 5px solid #85C224;
+    .row {
+      .col-md {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .desc {
+          margin-top: 30px;
+          text-align: justify;
+          line-height: 2em;
+        }
+      }
+    }
+
+  }
+}
