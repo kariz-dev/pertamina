@@ -16,6 +16,10 @@ body {
 .bg-gradient {
   background: linear-gradient(180deg, #85C224 0%, #0067AB 100%); }
 
+@media (max-width: 767px) {
+  .navbar {
+    background: #fff; } }
+
 .navbar-nav {
   display: flex;
   gap: 50px; }
@@ -23,7 +27,11 @@ body {
     .navbar-nav {
       gap: 2px; } }
   .navbar-nav .nav-item .nav-link {
+    color: #fff;
     transition: color 0.3s ease; }
+    @media (max-width: 767px) {
+      .navbar-nav .nav-item .nav-link {
+        color: #000; } }
     .navbar-nav .nav-item .nav-link:hover {
       color: #85C224; }
 
@@ -37,11 +45,59 @@ body {
     .navbar .navbar-nav-right .nav-search i {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      color: #fff; }
   .navbar .navbar-nav-right .nav-lang {
-    border: 2px solid #000;
+    color: #fff;
+    border: 2px solid #fff;
     border-radius: 10px;
     width: 56px;
     text-align: center; }
     .navbar .navbar-nav-right .nav-lang img {
       margin: 0 auto; }
+
+@media (max-width: 767px) {
+  .banner {
+    margin-top: 60px; } }
+
+.banner .carousel-inner .carousel-item .carousel-caption {
+  height: 100%;
+  max-width: 604px;
+  margin: 0 auto; }
+  .banner .carousel-inner .carousel-item .carousel-caption h2 {
+    align-self: center;
+    color: #fff;
+    font-family: "Futura Bold", sans-serif;
+    font-size: 35px; }
+    .banner .carousel-inner .carousel-item .carousel-caption h2 span {
+      color: #85c224 !important; }
+
+.banner .carousel-inner .carousel-item .carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  justify-content: end;
+  align-items: center; }
+  .banner .carousel-inner .carousel-item .carousel-content .wrap {
+    width: 487px; }
+    .banner .carousel-inner .carousel-item .carousel-content .wrap h3 {
+      font-family: 'Poppins Bold', sans-serif;
+      font-size: 20px;
+      line-height: 1.4em;
+      margin-bottom: 14px; }
+    .banner .carousel-inner .carousel-item .carousel-content .wrap p {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 30px; }
+    .banner .carousel-inner .carousel-item .carousel-content .wrap .cta-link i {
+      border: 1px solid #fff;
+      border-radius: 30px;
+      padding: 2px 26px;
+      margin-top: 100px;
+      font-size: 20px;
+      color: #fff; }

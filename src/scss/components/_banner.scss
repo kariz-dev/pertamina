@@ -1,0 +1,68 @@
+.banner {
+  @include media ('mobile') {
+    margin-top: 60px;
+  }
+  .carousel {
+    &-inner {
+      .carousel-item {
+        .carousel-caption {
+          height: 100%;
+          max-width: 604px;
+          margin: 0 auto;
+
+          h2 {
+            align-self: center;
+            color: #fff;
+            font-family: "Futura Bold", sans-serif;
+            font-size: 35px;
+
+            span {
+              color: #85c224 !important;
+            }
+          }
+        }
+
+        .carousel-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(0%, -50%);
+          padding-top: 1.25rem;
+          padding-bottom: 1.25rem;
+          color: #fff;
+          justify-content: end;
+          align-items: center;
+
+          .wrap {
+            width: 487px;
+
+            h3 {
+              font-family: 'Poppins Bold', sans-serif;
+              font-size: 20px;
+              line-height: 1.4em;
+              margin-bottom: 14px;
+            }
+
+            p {
+              font-family: 'Poppins', sans-serif;
+              color: #fff;
+              font-size: 12px;
+              margin-bottom: 30px;
+            }
+
+            .cta-link {
+              i {
+                border: 1px solid #fff;
+                border-radius: 30px;
+                padding: 2px 26px;
+                margin-top: 100px;
+                font-size: 20px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
