@@ -6,14 +6,14 @@
 }
 .social-media{
 	list-style: none;
-  display: inline-flex;
-  gap: 15px;
-  padding: 0;
+	display: inline-flex;
+	gap: 15px;
+	padding: 0;
 }
 .nostyle{
 	list-style: none;
- 	padding: 0;
- 	line-height: 2;
+	padding: 0;
+	line-height: 2;
 }
 .pt-60{padding-top: 60px}
 .pb-60{padding-bottom: 60px}
@@ -26,15 +26,113 @@
 }
 .contact input, .contact textarea{
 	border-radius: 20px;
-  color: #606060;
-  padding: 12px 40px;
-  margin-top: 20px;
-  border: 1px solid #606060;
+	color: #606060;
+	padding: 12px 40px;
+	margin-top: 20px;
+	border: 1px solid #606060;
 }
 .contact .submit-button{
 	border: 3px solid #85C224;
-  background: #fff;
-  border-radius: 20px;
-  padding: 8px 24px;
-  margin-top: 40px;
+	background: #fff;
+	border-radius: 20px;
+	padding: 8px 24px;
+	margin-top: 40px;
 }
+
+.gallery-menu{
+	position: absolute;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.gallery-menu button{
+	border: 3px solid #85C224;
+	background: transparent;
+	border-radius: 20px;
+	padding: 8px 24px;
+	margin-top: 40px;
+	margin-right: 20px;
+	color: #fff;
+}
+.partner .wrapper{
+	border: 2px solid #85C224;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+.partner-carousel.slick-slider{
+	
+}
+.partner-carousel .slick-prev, .partner-carousel .slick-next{
+	background: #85C224;
+}
+.partner-carousel .slick-slide img{
+	margin: auto;
+}
+.berita .card{
+	margin:auto;
+	border-radius: 15px;
+}
+.berita .card img{
+	border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.info{
+	background:rgba(134, 194, 36, 0.087);
+	display: flex;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.author{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.published{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: auto;
+}
+
+/*Galery slider*/
+
+.jssorl-009-spin img {
+	animation-name: jssorl-009-spin;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/*jssor slider arrow skin 106 css*/
+.jssora106 {display:block;position:absolute;cursor:pointer;}
+.jssora106 .c {fill:#fff;opacity:.3;}
+.jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+.jssora106:hover .c {opacity:.5;}
+.jssora106:hover .a {opacity:.8;}
+.jssora106.jssora106dn .c {opacity:.2;}
+.jssora106.jssora106dn .a {opacity:1;}
+.jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+/*jssor slider thumbnail skin 101 css*/
+.jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+.jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+.jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+.jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+.jssort101 .p:hover{padding:2px;}
+.jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+.jssort101 .p:hover.pdn{padding:0;}
+.jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+.jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+.jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+.jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+.jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
