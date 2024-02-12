@@ -133,7 +133,7 @@
       class="d-block w-100"
       alt="banner-slider-2"
       />
-      <div class="carousel-content d-none d-md-flex">
+      <div class="carousel-content d-none d-sm-block">
         <div class="wrap">
           <h3>
             Tetap Menghijau di Musim Kemarau Berkat pemanfaatan tenaga
@@ -147,7 +147,7 @@
             Cilacap, itu khawatir gagal panen karena kurangnya air yang
             mengaliri sawahnya.
           </p>
-          <a class="cta-link" href="#">
+          <a class="cta-link d-none d-sm-block" href="#">
             <i class="bi bi-arrow-right"></i>
           </a>
         </div>
@@ -239,7 +239,7 @@ data-bs-slide="next"
       </defs>
     </svg>
   </div>
-  <p class="desc">
+  <p class="desc txt-gray" style="line-height: 2;">
     Berdiri teguh sebagai pilar kepedulian sosial dan pembangunan
     berkelanjutan. Dengan komitmen untuk memberikan dampak positif bagi
     masyarakat dan lingkungan, Pertamina Foundation menjadi penyokong
@@ -291,18 +291,34 @@ data-bs-slide="next"
     <div class="slick-carousel">
       <div class="slick-carousel-item">
         <img src="./assets/img/event1.png" alt="Image 1" />
+        <div class="caption">
+          <span class="fw-bold">PFprestasi</span><br/>
+          <span class="subtitle">Daftar Beasiswa Sobat Bumi</span>
+        </div>
         <div class="overlay"></div>
       </div>
       <div class="slick-carousel-item">
         <img src="./assets/img/event2.png" alt="Image 2" />
+        <div class="caption">
+          <span class="fw-bold">PFpreneur</span><br/>
+          <span class="subtitle">Top 40 Preneur 2024</span>
+        </div>
         <div class="overlay"></div>
       </div>
       <div class="slick-carousel-item">
         <img src="./assets/img/event1.png" alt="Image 1" />
+        <div class="caption">
+          <span class="fw-bold">Slide3</span><br/>
+          <span class="subtitle">Daftar Beasiswa Sobat Bumi</span>
+        </div>
         <div class="overlay"></div>
       </div>
       <div class="slick-carousel-item">
         <img src="./assets/img/event2.png" alt="Image 2" />
+        <div class="caption">
+          <span class="fw-bold">Slide4</span><br/>
+          <span class="subtitle">Daftar Beasiswa Sobat Bumi</span>
+        </div>
         <div class="overlay"></div>
       </div>
     </div>
@@ -313,7 +329,7 @@ data-bs-slide="next"
 <!-- End Event -->
 
 <!-- Visi -->
-<section class="visi">
+<section class="visi" style="margin-bottom:50px">
   <div class="container">
     <div class="row">
       <div class="col-md">
@@ -361,7 +377,7 @@ data-bs-slide="next"
       bisnis, dan masyarakat agar dapat memberikan dampak positif yang
       lebih luas dan berkelanjutan.
     </p>
-    <a href="#" class="link">Baca Selengkapnya</a>
+    <a href="#" class="link selengkapnya">Baca Selengkapnya</a>
   </div>
 </div>
 </div>
@@ -372,7 +388,7 @@ data-bs-slide="next"
 <section class="program">
   <div
   class="container"
-  style="background: url(./assets/img/bg-program.png)"
+  style="background: url(./assets/img/bg-program.png);border-top: 3px solid #85C224;"
   >
   <h2 class="heading text-center">Program Kami</h2>
   <div class="sparator text-center">
@@ -407,17 +423,25 @@ data-bs-slide="next"
 </svg>
 </div>
 <div class="program-wrapper">
-  <div class="card">
-    <img src="./assets/img/card-program2.png" alt="program">
-    <a class="link" href="#">Education <i class="bi bi-arrow-right"></i></a>
-  </div>
-  <div class="card">
-    <img src="./assets/img/card-program3.png" alt="program">
-    <a class="link" href="#">Education <i class="bi bi-arrow-right"></i></a>
-  </div>
-  <div class="card">
-    <img src="./assets/img/card-program1.png" alt="program">
-    <a class="link" href="#">Education <i class="bi bi-arrow-right"></i></a>
+  <div class="row">
+    <div class="col-sm-4" style="margin-top:20px">
+      <div class="card">
+        <img src="./assets/img/card-program2.png" alt="program">
+        <a class="link" href="#">Education <i class="bi bi-arrow-right arrowSliding"></i></a>
+      </div>
+    </div>
+    <div class="col-sm-4" style="margin-top:20px">
+      <div class="card">
+        <img src="./assets/img/card-program3.png" alt="program">
+        <a class="link" href="#">Empowerment <i class="bi bi-arrow-right arrowSliding"></i></a>
+      </div>
+    </div>
+    <div class="col-sm-4" style="margin-top:20px">
+      <div class="card">
+        <img src="./assets/img/card-program1.png" alt="program">
+        <a class="link" href="#">Environment <i class="bi bi-arrow-right arrowSliding"></i></a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -428,17 +452,17 @@ data-bs-slide="next"
   <div class="content">
     <h2 class="heading">Pertamina Sustainability Center</h2>
     <p class="desc">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    <a href="#" class="link">Baca Selengkapnya</a>
+    <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
   </div>
 </div>
 </section>
 <!-- End Program -->
 
 <!-- Berita -->
-<section class="berita mt-150">
-  <div class="container">
+<section class="berita">
+  <div class="container" style="background: rgba(134, 194, 36, 0.087);padding-top: 60px;padding-bottom: 60px;">
     <h2 class="heading text-center">Berita</h2>
-    <div class="sparator text-center">
+    <div class="sparator text-center" style="margin-bottom: 30px;">
       <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
         <defs>
@@ -449,36 +473,136 @@ data-bs-slide="next"
         </defs>
       </svg>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="assets/img/berita/1.png" alt="Card image cap">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-3" style="margin-top:20px">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/berita/berita1.png" alt="Card image cap">
           <div class="info">
-            <div class="author">
+            <div class="author txt-gray">
               <img src="assets/img/icon_author.png">
               <span>PF</span>
             </div>
-            <div class="published">
+            <div class="published txt-gray">
               <img src="assets/img/icon_date.png">
               22 Jan 2024
             </div>
           </div>
           <div class="card-body text-center">
-            <p class="card-text">Berfokus pada Pariwisata Berkelanjutan, Pelita Air Kolaborasi dengan Pertamina Foundation</p>
-            <a href="#" class="link">Baca Selengkapnya</a>
+            <p class="card-text txt-gray">Berfokus pada Pariwisata Berkelanjutan, Pelita Air Kolaborasi dengan Pertamina Foundation</p>
+            <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
+      <div class="col-sm-3" style="margin-top:20px">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/berita/berita2.png" alt="Card image cap">
+          <div class="info">
+            <div class="author txt-gray">
+              <img src="assets/img/icon_author.png">
+              <span>PF</span>
+            </div>
+            <div class="published txt-gray">
+              <img src="assets/img/icon_date.png">
+              05 Dec 2023
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text txt-gray">Pertamina Berikan Pelatihan Paket Lengkap Untuk Ribuan Pengusaha Umkm Perempuan</p>
+            <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3" style="margin-top:20px">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/berita/berita3.png" alt="Card image cap">
+          <div class="info">
+            <div class="author txt-gray">
+              <img src="assets/img/icon_author.png">
+              <span>PF</span>
+            </div>
+            <div class="published txt-gray">
+              <img src="assets/img/icon_date.png">
+              28 Nov 2023
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text txt-gray">Kulik Solusi Alam Untuk Turunkan Emisi Lewat Konferensi Internasional</p>
+            <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-sm-3" style="margin-top:20px">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/berita/berita4.png" alt="Card image cap">
+          <div class="info">
+            <div class="author txt-gray">
+              <img src="assets/img/icon_author.png">
+              <span>PF</span>
+            </div>
+            <div class="published txt-gray">
+              <img src="assets/img/icon_date.png">
+              16 Oct 2023
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text txt-gray">Pertamina Dorong Partisipasi Mahasiswa dalam Desa Energi Berdikari</p>
+            <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3" style="margin-top:20px">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/berita/berita5.png" alt="Card image cap">
+          <div class="info">
+            <div class="author txt-gray">
+              <img src="assets/img/icon_author.png">
+              <span>PF</span>
+            </div>
+            <div class="published txt-gray">
+              <img src="assets/img/icon_date.png">
+              20 Sep 2023
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text txt-gray">Diluncurkan oleh GKR Hemas, PFpreneur Hadir Wujudkan UMKM, Unggulan Lokal</p>
+            <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3" style="margin-top:20px">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/berita/berita6.png" alt="Card image cap">
+          <div class="info">
+            <div class="author txt-gray">
+              <img src="assets/img/icon_author.png">
+              <span>PF</span>
+            </div>
+            <div class="published txt-gray">
+              <img src="assets/img/icon_date.png">
+              20 Sep 2023
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text txt-gray">Diresmikan GKR Hemas dan Bupati Sleman, Pertamina Hadirkan Pasar Sabtu Minggu Kali Ledek</p>
+            <a href="#" class="link Selengkapnya">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary btn-baca">Baca Selengkapnya</button>
     </div>
   </section>
 
   <!-- End Berita -->
 
   <!-- Partner -->
-  <section class="partner mt-150">
+  <section class="partner mt-90">
     <div class="container">
       <h2 class="heading text-center">Partner</h2>
-      <div class="sparator text-center">
+      <div class="sparator text-center mb-30">
         <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
           <defs>
@@ -521,10 +645,10 @@ data-bs-slide="next"
   <!-- End Partner -->
 
   <!-- Gallery -->
-  <section class="gallery mt-150">
+  <section class="gallery mt-90 d-none d-sm-block d-md-block">
     <div class="container">
       <h2 class="heading text-center">Gallery</h2>
-      <div class="sparator text-center">
+      <div class="sparator text-center mb-30">
         <svg width="82" height="4" viewBox="0 0 82 4" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="82" y="4.76837e-06" width="4" height="82" transform="rotate(90 82 4.76837e-06)" fill="url(#paint0_linear_15_92)"/>
           <defs>
@@ -535,7 +659,7 @@ data-bs-slide="next"
           </defs>
         </svg>
       </div>
-      <div class="gallery-menu">
+      <div class="gallery-menu d-none d-sm-block d-md-block">
         <button>Education</button>
         <button>Empowerment</button>
         <button>Environment</button>
@@ -698,6 +822,29 @@ data-bs-slide="next"
     </div>
   </section>
   <!-- End Footer -->
+  <section class="side-nav">
+    <div class="side-area">
+      <ul>
+        <li><img src="assets/img/ic_outline-email.png" /></li>
+        <li><img src="assets/img/mdi_instagram.png" /></li>
+        <li><img src="assets/img/mingcute_youtube-line.png" /></li>
+        <li><img src="assets/img/ri_twitter-line.png" /></li>
+        <li><img src="assets/img/mingcute_facebook-line.png" /></li>
+        <li><img src="assets/img/ant-design_linkedin-outlined.png" /></li>
+      </ul>
+    </div>
+    <div class="side-area">
+      <ul style="margin-top:30px">
+        <li><img src="assets/img/phone.png" /></li>
+      </ul>
+    </div>
+    <div class="side-area">
+      <ul style="margin-top:30px">
+        <li id="btn-back-to-top"><img src="assets/img/up.png" /></li>
+      </ul>
+    </div>
+    
+  </section>
 
   <!-- Vendor -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -780,6 +927,38 @@ data-bs-slide="next"
     };
 
     jssor_1_slider_init();
-  </script>
+
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar.fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+
+    let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+        ) {
+        mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+// When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 </body>
 </html>
